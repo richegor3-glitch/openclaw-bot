@@ -2,5 +2,4 @@ FROM node:22-slim
 RUN apt-get update && apt-get install -y git
 RUN npm install -g openclaw@latest
 EXPOSE 8080
-ENV HOST=0.0.0.0
-CMD ["openclaw", "gateway", "--port", "8080", "--allow-unconfigured"]
+CMD ["openclaw", "gateway", "--help"]
